@@ -32,7 +32,15 @@ body {
   overflow-y: scroll;
   /* force scroll to appear */
 }
-
+.panel-title:after {
+    font-family: FontAwesome;
+    content: "\f106";
+    float: right;
+    color: white;
+}
+.panel-title.collapsed:after {
+    content: "\f107";
+}
 /* helper class when showing content */
 .noscroll {
   overflow: hidden;
