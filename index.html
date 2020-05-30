@@ -21,7 +21,9 @@
       type="text/css"
       href="fonts/font-awesome-4.3.0/css/font-awesome.min.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<link rel="stylesheet" type="text/css" href="css/style1.css" />
+		<link rel="stylesheet" type="text/css" href="css/style2.css" />
+
     <link
       rel="stylesheet"
       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -38,12 +40,11 @@
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
       crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
+		></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+		<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'><link rel="stylesheet" href="./style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
   </head>
 
   <body>
@@ -63,26 +64,116 @@
               <span>Filter by:</span>
               <span class="dropdown">Popular</span>
             </div>
-          </header>
+					</header>
+					
+
+
+          <div class="grid__item col-lg-3" href="#">
+ 
+								<div class="meta meta--preview">
+									<img class="meta__avatar" src="img/brain.gif" alt="author01" />
+									<span class="meta__date">
+									<i class="fa fa-calendar-o"></i> 9 Apr</span>
+									<span class="meta__reading-time">
+									<i class="fa fa-clock-o"></i> 3 min read</span>
+								</div>
+								
+
+								
+								<h2 class="title title--preview">
+									Developing Next-Generation Brain Sensing Technologies
+								</h2>
+								
+								<a class="btn des" href="#open-modal">Read more</a>
+							  </div>
+							 <div id="open-modal" class="modal-window">
+									<div>
+										<a href="#" title="Close" class="modal-close">Close</a>
+
+
+										<article class="content__item">
+											<h2 class="title title--full">
+												Developing Next-Generation Brain Sensing Technologies
+											</h2>
+											<div class="meta meta--full">
+												<img class="meta__avatar" src="img/brain.gif" alt="author01" />
+												<span class="meta__author"
+													>Jacob T. Robinson, Eric Pohlmeyer, Malte C. Gather, Caleb
+													Kemere, John E. Kitching et al.
+												</span>
+												<span class="meta__date"
+													><i class="fa fa-calendar-o"></i> 9 Apr</span
+												>
+												<span class="meta__reading-time"
+													><i class="fa fa-clock-o"></i> 3 min read</span
+												>
+											</div>
+				
+											<p>
+												Brain sensing may help improve the lives of patients with
+												neurological and other disorders. It may be achieved by novel
+												bioelectronic devices. But it might take a while in coming out
+												from the research labs to market.
+											</p>
+				
+											<div class="panel-group">
+												<div class="panel panel-default">
+													<div id="collapse1" class="panel-collapse collapse">
+														<div class="condensed_card">
+															<p>
+																Advances in sensing technology raise the possibility of
+																creating neural interfaces that can more effectively
+																restore or repair neural function and reveal fundamental
+																properties of neural information processing. To realize
+																the potential of these bioelectronic devices, it is
+																necessary to understand the capabilities of emerging
+																technologies and identify the best strategies to
+																translate these technologies into products and therapies
+																that will improve the lives of patients with
+																neurological and other disorders. Here, we discuss
+																emerging technologies for sensing brain activity,
+																anticipated challenges for translation, and perspectives
+																for how to best transition these technologies from
+																academic research labs to useful products for
+																neuroscience researchers and human patients.
+															</p>
+															<br />
+															<p>DOI:<a href="#">10.1109/JSEN.2019.2931159</a></p>
+															<p>Published in:<a href="#">IEEE Sensors Journal,vol. 19, no. 22, pp. 10163-10175</a></p>
+														</div>
+													</div>
+				
+													<div class="panel-heading">
+														<a
+															class="panel-title condensed btn btn-primary"
+															data-toggle="collapse"
+															href="#collapse1"
+															role="button"
+															aria-expanded="false"
+															aria-controls="collapseExample"
+															>Condensed &nbsp;
+														</a>
+														<a class="ieee btn btn-primary" href="#" role="button"
+															>IEEE Xplore
+														</a>
+														<a class="similar btn btn-primary" href="#" role="button"
+															>Similar Articles</a
+														>
+													</div>
+												</div>
+											</div>
+				
+										</article>
+				
+										
+								
+									</div>
+
+					</div>
+					
+					
           <a class="grid__item col-lg-3" href="#">
-            <!-- <div class="loader"></div> -->
-            <!-- <span class="category">Stories for humans</span> -->
-            <div class="meta meta--preview">
-              <img class="meta__avatar" src="img/brain.gif" alt="author01" />
-              <span class="meta__date"
-                ><i class="fa fa-calendar-o"></i> 9 Apr</span
-              >
-              <span class="meta__reading-time"
-                ><i class="fa fa-clock-o"></i> 3 min read</span
-              >
-            </div>
-            <h2 class="title title--preview">
-              Developing Next-Generation Brain Sensing Technologies
-            </h2>
-          </a>
-          <a class="grid__item col-lg-3" href="#">
-            <!-- <div class="loader"></div>
-						<span class="category">Love &amp; Hate</span> -->
+
             <div class="meta meta--preview">
               <img class="meta__avatar" src="img/wireless.png" alt="author02" />
               <span class="meta__date"
@@ -93,10 +184,12 @@
               >
             </div>
             <h2 class="title title--preview">Wearable Flexible Sensors</h2>
-          </a>
+					</a>
+					
+
+
           <a class="grid__item col-lg-3" href="#">
-            <!-- <div class="loader"></div>
-						<span class="category">Nutrition</span> -->
+
             <div class="meta meta--preview">
               <img class="meta__avatar" src="img/wireless.png" alt="author03" />
               <span class="meta__date"
@@ -109,9 +202,26 @@
             <h2 class="title title--preview">What Goes Around Comes Around</h2>
           </a>
 
+
+
           <a class="grid__item col-lg-3" href="#">
-            <!-- <div class="loader"></div>
-						<span class="category">Nutrition</span> -->
+
+            <div class="meta meta--preview">
+              <img class="meta__avatar" src="img/wireless.png" alt="author03" />
+              <span class="meta__date"
+                ><i class="fa fa-calendar-o"></i> 6 Apr</span
+              >
+              <span class="meta__reading-time"
+                ><i class="fa fa-clock-o"></i> 2 min read</span
+              >
+            </div>
+            <h2 class="title title--preview">What Goes Around Comes Around</h2>
+					</a>
+					
+
+					
+          <a class="grid__item col-lg-3" href="#">
+
             <div class="meta meta--preview">
               <img class="meta__avatar" src="img/wireless.png" alt="author03" />
               <span class="meta__date"
@@ -123,15 +233,63 @@
             </div>
             <h2 class="title title--preview">What Goes Around Comes Around</h2>
           </a>
+					
 
-          <!-- <footer class="page-meta">
-						<span>Load more...</span>
-					</footer> -->
-        </section>
+					<a class="grid__item col-lg-3" href="#">
+
+            <div class="meta meta--preview">
+              <img class="meta__avatar" src="img/wireless.png" alt="author03" />
+              <span class="meta__date"
+                ><i class="fa fa-calendar-o"></i> 6 Apr</span
+              >
+              <span class="meta__reading-time"
+                ><i class="fa fa-clock-o"></i> 2 min read</span
+              >
+            </div>
+            <h2 class="title title--preview">What Goes Around Comes Around</h2>
+					</a>
+					
+					<a class="grid__item col-lg-3" href="#">
+
+            <div class="meta meta--preview">
+              <img class="meta__avatar" src="img/wireless.png" alt="author03" />
+              <span class="meta__date"
+                ><i class="fa fa-calendar-o"></i> 6 Apr</span
+              >
+              <span class="meta__reading-time"
+                ><i class="fa fa-clock-o"></i> 2 min read</span
+              >
+            </div>
+            <h2 class="title title--preview">What Goes Around Comes Around</h2>
+					</a>
+					
+					<a class="grid__item col-lg-3" href="#">
+
+            <div class="meta meta--preview">
+              <img class="meta__avatar" src="img/wireless.png" alt="author03" />
+              <span class="meta__date"
+                ><i class="fa fa-calendar-o"></i> 6 Apr</span
+              >
+              <span class="meta__reading-time"
+                ><i class="fa fa-clock-o"></i> 2 min read</span
+              >
+            </div>
+            <h2 class="title title--preview">What Goes Around Comes Around</h2>
+          </a>
+				</section>
+				
+
+
+
+
+
+
+
+<!-- 
+
         <section class="content">
           <div class="scroll-wrap">
             <article class="content__item">
-              <!-- <span class="category category--full">Stories for humans</span> -->
               <h2 class="title title--full">
                 Developing Next-Generation Brain Sensing Technologies
               </h2>
@@ -147,7 +305,6 @@
                 <span class="meta__reading-time"
                   ><i class="fa fa-clock-o"></i> 3 min read</span
                 >
-                <!-- <a class="condense btn btn-primary" href="#" role="button">Link</a> -->
               </div>
 
               <p>
@@ -204,20 +361,7 @@
                 </div>
               </div>
 
-              <!-- <div class="collapse" id="collapseExample">
-								<div class="condensed_card card card-body">
-								<div class="condensed_card" id="condensed_card_scroll">
-								  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.<br>
-								  Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-								The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-								</div>
-							  </div>
-							</div>
-							 -->
-              <!-- <a  class="condensed btn btn-primary" href="#" role="button">Condensed Version</a> -->
             </article>
-            <!-- <button type="button" class="btn btn-dark">Dark</button> -->
 
             <article class="content__item">
               <span class="category category--full">Love &amp; Hate</span>
@@ -273,7 +417,6 @@
                   </div>
 
                   <div class="panel-heading">
-                    <!-- <a data-toggle="collapse" href="#collapse1">Collapsible panel</a> -->
                     <a
                       class="panel-title condensed btn btn-primary"
                       data-toggle="collapse"
@@ -350,12 +493,10 @@
                 remnants of his ways of thinking that survive in our own manners
                 and customs.
               </p>
-            </article>
+            </article> -->
+		
 
-            <button class="close-button">
-              <i class="fa fa-close"></i><span>Close</span>
-            </button>
-          </div>
+
 
           <script src="js/classie.js"></script>
           <script src="js/main.js"></script>
