@@ -1,149 +1,177 @@
 @import "compass/css3";
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
+
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+  font-family: "codropsicons";
+  src: url("../fonts/codropsicons/codropsicons.eot");
+  src: url("../fonts/codropsicons/codropsicons.eot?#iefix")
+      format("embedded-opentype"),
+    url("../fonts/codropsicons/codropsicons.woff") format("woff"),
+    url("../fonts/codropsicons/codropsicons.ttf") format("truetype"),
+    url("../fonts/codropsicons/codropsicons.svg#codropsicons") format("svg");
+}
 .body {
-    margin: auto;
+  margin: auto;
 }
 
 body {
-    background: #fff;
-    color: #7b7b7b;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: "Martel Sans", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    overflow: hidden;
-    overflow-y: scroll;
-    /* force scroll to appear */
+  background: #fff;
+  color: #7b7b7b;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Martel Sans", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  overflow-y: scroll;
+  /* force scroll to appear */
 }
 
+.row > a {
+  color: #fff !important;
+  text-decoration: none !important;
+}
 .modal-dialog {
-    width: 1350px;
+  width: 1200px !important;
+  left: auto !important;
 }
-
 
 /* .modal-header {
     width: 900px;
 } */
 
 .text {
-    font-family: raleway;
-    font-size: 40px;
-    position: absolute center;
-    display: inline-block;
-    text-align: center;
-    padding-left: 7.4%;
-    color: #eee;
-    margin-top: 43px;
+  font-family: raleway;
+  font-size: 40px;
+  position: absolute center;
+  display: inline-block;
+  text-align: center;
+  padding-left: 7.4%;
+  color: #eee;
+  margin-top: 43px;
 }
 
 .text1 {
-    font-family: raleway;
-    font-size: 29px;
-    text-align: center;
-    margin-top: -20px;
-    color: #eee;
+  font-family: raleway;
+  font-size: 29px;
+  text-align: center;
+  margin-top: -20px;
+  color: #eee;
 }
 
 .btn-outline {
-    color: inherit;
-    transition: all 1.4s;
-    background-color: transparent;
+  color: inherit;
+  transition: all 1.4s;
+  background-color: transparent;
 }
 
 .thumbnail {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
-    transition: 0.3s;
-    min-width: 40%;
-    border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  min-width: 40%;
+  border-radius: 5px;
 }
 
 .thumbnail-description {
-    min-height: 40px;
+  min-height: 40px;
 }
 
 .thumbnail:hover {
-    cursor: pointer;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+  cursor: pointer;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
 }
 
 .condensed_btn {
-    position: relative;
-    margin-left: 45px;
+  position: relative;
+  margin-left: 45px;
 }
 
 .ieee {
-    position: relative;
-    margin-left: 390px;
+  position: relative;
+  margin-left: 390px;
 }
 
 .similar {
-    position: relative;
-    margin-left: 450px;
+  position: relative;
+  margin-left: 450px;
 }
 
 .condensed_card {
-    -ms-flex: 1 1 auto;
-    flex: 1 1 auto;
-    min-height: 1px;
-    height: auto;
-    padding: 1.25rem;
-    position: relative;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
-    background-color: #fff;
-    background-clip: border-box;
-    border: 1px solid rgba(0, 0, 0, 0.125);
-    border-radius: 0.25rem;
-    border-color: blue;
-    font-weight: 400;
-    font-size: 16px;
-    font-family: "Martel Sans", Arial, sans-serif;
-    /* -webkit-font-smoothing: antialiased;
+  -ms-flex: 1 1 auto;
+  flex: 1 1 auto;
+  min-height: 1px;
+  height: auto;
+  padding: 1.25rem;
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+  border-color: blue;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Martel Sans", Arial, sans-serif;
+  /* -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
   overflow-y: scroll; */
 }
 
 .panel-heading {
-    margin-top: 10px;
-    height: 50px;
-    background-color: #eee;
+  margin-top: 10px;
+  height: 50px;
+  background-color: #eee;
+}
+
+.panel-title-custom:after {
+  font-family: FontAwesome;
+  content: "\f106";
+  float: right;
+  color: white;
+}
+
+.panel-title-custom.collapsed:after {
+  color: white;
+  content: "\f107";
 }
 
 .panel-heading .accordion-toggle:after {
-    /* symbol for "opening" panels */
-    font-family: "Glyphicons Halflings";
-    /* essential for enabling glyphicon */
-    content: "\e114";
-    /* adjust as needed, taken from bootstrap.css */
-    float: right;
-    /* adjust as needed */
-    color: grey;
-    /* adjust as needed */
+  /* symbol for "opening" panels */
+  font-family: "Glyphicons Halflings";
+  /* essential for enabling glyphicon */
+  content: "\e114";
+  /* adjust as needed, taken from bootstrap.css */
+  float: right;
+  /* adjust as needed */
+  color: grey;
+  /* adjust as needed */
 }
 
 .panel-heading .accordion-toggle.collapsed:after {
-    /* symbol for "collapsed" panels */
-    content: "\e080";
-    /* adjust as needed, taken from bootstrap.css */
+  /* symbol for "collapsed" panels */
+  content: "\e080";
+  /* adjust as needed, taken from bootstrap.css */
 }
 
 small {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 .btn {
-    background-color: blue;
-    padding: 1em 1.5em;
-    border-radius: 3px;
-    text-decoration: none;
+  background-color: blue;
+  padding: 1em 1.5em;
+  border-radius: 3px;
+  text-decoration: none;
 }
 
 .btn i {
-    padding-right: 0.3em;
+  padding-right: 0.3em;
 }
