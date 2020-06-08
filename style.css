@@ -193,9 +193,6 @@ small {
     font-size: 21px;
 }
 
-
-@media(max-height: 500px) {
-  .col-md-3 {
+.col-md-3 {
     height: 464px;
-  }
 }
