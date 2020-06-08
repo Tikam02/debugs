@@ -192,6 +192,10 @@ small {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 21px;
 }
-.main{
+
+
+@media(max-height: 500px) {
+  .col-md-3 {
     height: 464px;
+  }
 }
